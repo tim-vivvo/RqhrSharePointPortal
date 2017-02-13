@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="PageLayouts" Url="_catalogs/masterpage" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <File Path="PageLayouts\RQHRPortalHomeLayout.aspx" Url="RQHRPortalHomeLayout.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" Level="Published" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="PageLayouts\NewsItemDisplayPageLayout.aspx" Url="NewsItemDisplayPageLayout.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" Level="Published" IgnoreIfAlreadyExists="TRUE" />
+  </Module>
+</Elements>

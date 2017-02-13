@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Receivers ListUrl="Lists/NewsItemList" xmlns="http://schemas.microsoft.com/sharepoint/">
+      <Receiver>
+        <Name>NewsItemsEventReceiverItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>RQHRPortal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dab0437a5abacf12</Assembly>
+        <Class>RQHRPortal.EventReceivers.NewsItemsEventReceiver.NewsItemsEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>NewsItemsEventReceiverItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>RQHRPortal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dab0437a5abacf12</Assembly>
+        <Class>RQHRPortal.EventReceivers.NewsItemsEventReceiver.NewsItemsEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

@@ -1,0 +1,84 @@
+﻿#phonebook-title {
+    background-color: #00833F;
+    padding: 20px;    
+    color: white;
+}
+
+
+
+
+#phonebook-search{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#phonebook-title h3 {
+    margin: 0;
+}
+
+#phonebook-searchbox{
+    background-color:#14945D;
+     padding: 15px;
+}
+
+
+#SearchTextInput {
+   width: 100%;
+    border-radius: 9px;
+    height: 50px;
+    background-color: #FFF;
+    background-image: url("/_layouts/15/RQHRPortal/Images/Shape 2.png");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: black;
+}
+
+#phonebook-search-results {
+    padding-top: 15px;
+}
+
+.phonebook-item{
+    margin-bottom: 25px;
+}
+
+.phonebook-item-picture-name img{
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+    background-color: #DDDDDD;
+}
+
+.phonebook-item-name h4 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #00833F;
+}
+
+.phonebook-item-name p {
+    font-style: italic;
+    font-size: 16px;
+    color: #B0B5B3;
+}
+
+.phonebook-item-details {
+    clear: both;
+    margin-top: 25px;
+}
+
+.phone-number {
+    background-image: url("/_layouts/15/RQHRPortal/Images/phone.png");
+    background-repeat: no-repeat;
+    padding-left: 23px;
+}
+
+.email {
+    background-image: url("/_layouts/15/RQHRPortal/Images/mail.png");
+    background-repeat: no-repeat;
+    padding-left: 23px;
+}
+
+#see-more{
+    color: #00833F;
+    text-align:center;
+}

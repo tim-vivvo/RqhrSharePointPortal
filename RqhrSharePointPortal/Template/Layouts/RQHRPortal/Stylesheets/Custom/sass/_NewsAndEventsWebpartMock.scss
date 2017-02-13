@@ -1,0 +1,216 @@
+﻿@media (min-width: 1024px){
+    .news-item {
+        padding: 10px 0 10px 25px;
+        margin-right: 5px;
+        overflow: auto;
+        font-size: 15px;
+    }
+    #news-events-title {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-left:25px;
+    }
+    #more-news-and-events {
+        margin-bottom: 19px;
+        margin-top: 30px;
+        margin-left:25px;
+    }
+    .news-item img {
+        margin-right: 15px;
+        float: left;
+        width: 130px;
+    }
+    #newsCustomScrollBar{
+        height: 310px;
+        overflow-y: scroll;
+    }
+
+   #newsCustomScrollBar .jspVerticalBar {
+       width: 8px;
+    }
+    #newsCustomScrollBar .jspTrack {
+       width: 8px;
+    }
+    #newsCustomScrollBar .jspDrag {
+       width: 8px;
+    }
+    .news-item-div{
+        overflow:auto;
+        display: table;
+    }
+    .item-Title{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #aside-news{
+        padding-right:10px !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .news-item, .news-title{        
+        display: inline-block;
+        margin: 1em;
+        vertical-align:top;
+    }
+
+    .news-title{
+        margin-top:0!important;
+    }
+
+    #newsCustomScrollBar{               
+        height: 170px;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    #news-events-title {
+        float: left;
+        width: 116px;
+    }
+
+    #news-events-title h1{
+        font-size: 25px !important;
+    }
+
+    #aside-news{
+        padding:15px 60px 12px 60px;
+    }
+
+    .news-item {                         
+        font-size: 11px;
+        width: 150px;
+
+    }
+
+    .news-item img {       
+        width: 150px;
+        margin-bottom:8px;
+    }
+
+    #more-news-and-events{
+        display: none;
+    }
+
+    .item-Title{
+        white-space: normal;
+    }
+    .item-Title:before { 
+        content: "\000A";
+        white-space: pre;
+    }
+    #newsCustomScrollBar .jspHorizontalBar {
+       height: 7px;
+    }
+    #newsCustomScrollBar .jspTrack {
+       height: 7px;
+    }
+    #newsCustomScrollBar .jspDrag {
+       height: 7px;
+    }
+    #item-0{
+        margin-left: 0;
+    }
+    #item-3{
+        margin-right: 0;
+    }
+    .h1PartialUnderline::after{
+        width: 60px !important;
+    }
+}
+
+#centralNewsItem{
+    padding: 0;
+}
+
+#centralNewsItem img{
+    width: 100%
+}
+
+#aside-news{
+   background: -moz-linear-gradient(top right, #D7D3D2, #F5F5F5);
+   background-image: linear-gradient(to bottom, #D7D3D2, #F5F5F5);
+   background: -webkit-linear-gradient(#D7D3D2, #F5F5F5);
+}
+
+.newsAnchor{
+    color:#00833F !important;
+}
+
+.carButtons {
+    float: left;
+    font-size: 41px;
+    margin-right: 2px;
+    border: 1px solid;
+    width: 62px;
+    text-align: center;
+    background-color: #CCCFCE;
+    border: none;
+    height: 60px;
+    position: relative;
+}
+
+.carButtons:hover{
+    text-decoration:none;
+    background-color: gray;
+}
+
+#buttons{
+    background-color: rgba(241, 238, 235, 0.9);
+    background: rgba(241, 238, 235, 0.9);
+    overflow: auto;
+    margin-top: -60px;
+    position: relative;
+}
+#centralElementTitle{
+    font-size: 18px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    cursor:pointer;
+}
+.carButtons a{
+    color: white;
+}
+
+.carButtons a, a:hover, a:visited, a:link, a:active{
+    color: white;
+    text-decoration:none !important;
+}
+
+.active-item{
+    color: #12935B!important;
+    background-color: #F9F9F9;
+}
+
+#newsCustomScrollBar .jspVerticalBar {
+   border-radius: 15px;
+   background-color: #DADADA;
+}
+#newsCustomScrollBar .jspHorizontalBar {
+   border-radius: 15px;
+   background-color: #DADADA;
+}
+#newsCustomScrollBar .jspTrack {
+   background-color:#DADADA;
+   border-radius: 15px;
+}
+#newsCustomScrollBar .jspDrag {
+   background-color: #FFFFFF;
+   border-radius: 15px;
+}
+.news-item{
+    color:#7D8180
+}
+
+.no-items {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    height: 509px;
+}
+.news-item:hover{
+    cursor:pointer;
+}

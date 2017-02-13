@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="MasterPage" Url="_catalogs/masterpage" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <File Path="MasterPage\rqhrPortal.master" Url="rqhrPortal.master" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

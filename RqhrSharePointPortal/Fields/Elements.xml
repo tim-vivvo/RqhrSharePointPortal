@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{5810CF4E-4158-4F97-9BEA-ED951D4E87C0}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Type="Note" DisplayName="NewsItemBody" StaticName="NewsItemBody" Name="NewsItemBody" ShowInViewForms="TRUE" ShowInEditForm="True" ShowInDisplayForm="TRUE" Group="RQHR" Required="TRUE" Hidden="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{68AA1AAC-92CE-4B47-9B4F-B7BDAF590787}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Type="Text" DisplayName="NewsItemImageUrl" StaticName="NewsItemImageUrl" Name="NewsItemImageUrl" ShowInViewForms="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" Group="RQHR" Required="FALSE" Hidden="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" ID="{AE444E56-FA26-46B2-9CC7-19E9BB277CA4}" StaticName="ExpiryDate" Name="ExpiryDate" ShowInViewForms="TRUE" ShowInEditForm="True" ShowInDisplayForm="TRUE" DisplayName="Expiry_Date" Description="Expiry Date for news item" Group="RQHR" Required="TRUE" Type="DateTime" Format="DateOnly" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{C6D21677-F4F9-4E3E-B62F-3CDEE9D4094E}" Description="NewsItemImage" StaticName="NewsItemImage" Name="NewsItemImage" DisplayName="NewsItemImage" ShowInDisplayForm="TRUE" Type="Image" Group="RQHR" SourceID="http://schemas.microsoft.com/sharepoint/v3" RichText="TRUE" RichTextMode="ThemeHtml" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" ID="{635a2031-2088-4413-b54e-d2af5daf08bf}" StaticName="NewsItemLink" Name="NewsItemLink" ShowInViewForms="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="True" DisplayName="NewsItemLink" Description="NewsItemLink" Type="URL" Format="Hyperlink" Group="RQHR" Required="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{AF273E5C-36D1-425B-82A8-D7C1F13ED1E8}" Name="NewsItemCategory" StaticName="NewsItemCategory" ShowInDisplayForm="TRUE" DisplayName="NewsItemCategory" Description="News Item Category" Group="RQHR" SourceID="http://schemas.microsoft.com/sharepoint/v3" Type="Choice" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CHOICES>
+      <CHOICE>Alert</CHOICE>
+      <CHOICE>Portal News</CHOICE>
+    </CHOICES>
+    <Default>Portal News</Default>
+  </Field>
+  <Field ID="{19B1C0A1-3D37-4D2B-A7BE-AEC1E11B7C9E}" Name="ItemApprovalStatus" StaticName="ItemApprovalStatus" ShowInDisplayForm="FALSE" DisplayName="ItemApprovalStatus" Description="Item Approval Status" Group="RQHR" SourceID="http://schemas.microsoft.com/sharepoint/v3" Type="Choice" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CHOICES>
+      <CHOICE>Approved</CHOICE>
+    </CHOICES>
+    <Default>Approved</Default>
+  </Field>
+</Elements>

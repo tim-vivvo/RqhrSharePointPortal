@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="PhoneBookWebpartMock" List="113" Url="_catalogs/wp" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <File Path="PhoneBookWebpartMock\PhoneBookWebpartMock.webpart" Url="RQHRPortal_PhoneBookWebpartMock.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

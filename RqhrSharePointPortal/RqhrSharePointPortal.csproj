@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2BA704A-7305-4021-B19A-D6C3CA51846B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RqhrSharePointPortal</RootNamespace>
+    <AssemblyName>RqhrSharePointPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content types\NewsItem\Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature5\Feature5.Template.xml">
+      <DependentUpon>Feature5.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Elements.xml" />
+    <Content Include="Modules\CEOCornerWebpartMock\Elements.xml" />
+    <Content Include="Modules\NewsAndEventsWebpartMock\Elements.xml" />
+    <Content Include="Modules\PageLayouts\Elements.xml" />
+    <Content Include="Modules\PageLayouts\NewsItemDisplayPageLayout.aspx" />
+    <Content Include="Modules\PageLayouts\RQHRPortalHomeLayout.aspx" />
+    <Content Include="Modules\Pages\Elements.xml" />
+    <Content Include="Modules\Pages\HomePage.aspx" />
+    <Content Include="Modules\Pages\NewsItemDisplayPage.aspx" />
+    <Content Include="Other elements\Receivers\Elements.xml" />
+    <Content Include="Other Imported Files\Newtonsoft.Json.dll" />
+    <Content Include="Other Imported Files\RQHRPortal.BLL.dll" />
+    <Content Include="Other Imported Files\RQHRPortal.Common.dll" />
+    <Content Include="Other Imported Files\RQHRPortal.DAL.dll" />
+    <Content Include="Other Imported Files\RQHRPortal.DataModel.dll" />
+    <Content Include="Other Imported Files\RQHRPortal.dll" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal.WebParts\CEOCornerWebpartMock\CEOCornerWebpartMockUserControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal.WebParts\NewsAndEventsWebpartMock\NewsAndEventsWebpartMockUserControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal.WebParts\PhoneBookWebpartMock\PhoneBookWebpartMockUserControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal.WebParts\TestWP\TestWPUserControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal.WebParts\VideosAndOtherContentWebpartMock\VideosAndOtherContentWebpartMockUserControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal\FooterLinksControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal\HiddenSiteCollectionTitlesControl.ascx" />
+    <Content Include="Template\CONTROLTEMPLATES\RQHRPortal\NewsItemDisplayControl.ascx" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\3.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\4.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\4Ipad.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\actions.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\actionsHover.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\helpIcon.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\helpIconHover.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\hoverActionTest.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Layer 2.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Layer 3.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Layer 5.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Layer 6.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\layer2Ipad.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\mail.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\notificationsIcon.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\notificationsIconHover.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\phone.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\rqhr-logo-footer.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\rqhrLogo.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Shape 2.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\Shape 9.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\VectorSmartObject.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Images\video-thumbnail.png" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap-sprockets.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap.min.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\affix.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\alert.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\button.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\carousel.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\collapse.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\dropdown.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\modal.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\popover.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\scrollspy.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\tab.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\tooltip.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Bootstrap\bootstrap\transition.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Custom\initCustom.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Custom\redirectToNewsPageOnClick.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Custom\renderNewsPageContent.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Custom\siteCollectionMenu.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\Custom\testWebPartSearchResults.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\jQuery\jquery-2.2.3.min.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\jQuery\jquery.jscrollpane.min.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\jQuery\jquery.mousewheel.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Scripts\jQuery\jquery.mwheelintent.js" />
+    <Content Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap.css" />
+    <Content Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap.min.css" />
+    <Content Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\style.css" />
+    <Content Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\style.min.css" />
+    <Content Include="Template\Layouts\RQHRPortal\Stylesheets\jQuery\jquery.jscrollpane.css" />
+    <None Include="Content types\NewsItem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14b0b488-bd1c-419b-a5da-f01c2c243840}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9f1dc0af-8eb3-4dd3-ba62-3352295f0c0c}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{6d97c37e-b8be-48dd-a428-8ec3873be357}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{5a3500ac-ab52-4b98-a6c0-af09218eab32}</FeatureId>
+    </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{db951d9a-a826-4722-b976-00cccd46ce3e}</FeatureId>
+    </None>
+    <None Include="Features\Feature5\Feature5.feature">
+      <FeatureId>{2bc39b7f-b883-49dd-b9ee-95ecddcba83b}</FeatureId>
+    </None>
+    <None Include="Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78856510-8def-4cf3-9237-477fc1f9a69f}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <Content Include="Modules\MasterPage\Elements.xml" />
+    <Content Include="Modules\MasterPage\rqhrPortal.master" />
+    <Content Include="Modules\CEOCornerWebpartMock\CEOCornerWebpartMock.webpart" />
+    <None Include="Modules\CEOCornerWebpartMock\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69bbd193-3409-4b74-9bf6-ae818e868cfa}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bbafa5aa-e330-422c-92b7-347179691698}</SharePointProjectItemId>
+    </None>
+    <Content Include="Modules\NewsAndEventsWebpartMock\NewsAndEventsWebpartMock.webpart" />
+    <None Include="Modules\NewsAndEventsWebpartMock\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56123eac-f1a1-42f8-8f86-aa63a6968eb0}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6aac38b1-eb9d-4c80-a8da-868ed67833e5}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9bf401c5-bd01-4631-91b8-f84f77517c6a}</SharePointProjectItemId>
+    </None>
+    <Content Include="Modules\PhoneBookWebpartMock\Elements.xml" />
+    <Content Include="Modules\PhoneBookWebpartMock\PhoneBookWebpartMock.webpart" />
+    <None Include="Modules\PhoneBookWebpartMock\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3658bf4d-3ae1-4295-b4e9-cfc24b249ec7}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\TestWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ced15375-2ea6-473c-b840-be42965d275a}</SharePointProjectItemId>
+    </None>
+    <Content Include="Modules\TestWP\Elements.xml" />
+    <Content Include="Modules\TestWP\TestWP.webpart" />
+    <None Include="Modules\VideosAndOtherContentWebpartMock\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{44243735-ea2e-4563-a07d-89897d00a68d}</SharePointProjectItemId>
+    </None>
+    <Content Include="Modules\VideosAndOtherContentWebpartMock\Elements.xml" />
+    <Content Include="Modules\VideosAndOtherContentWebpartMock\VideosAndOtherContentWebpartMock.webpart" />
+    <None Include="Other elements\Receivers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{453d8fc4-fc7a-4154-9d2c-a5b063d44768}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{975f16b5-6fdf-4dca-9906-5381806d29e9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap.css.map" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_alerts.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_background-variant.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_border-radius.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_buttons.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_center-block.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_clearfix.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_forms.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_gradients.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_grid.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_hide-text.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_image.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_labels.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_list-group.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_nav-vertical-align.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_opacity.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_pagination.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_panels.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_progress-bar.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_reset-filter.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_reset-text.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_resize.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_responsive-visibility.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_size.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_tab-focus.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_table-row.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_text-overflow.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\mixins\_vendor-prefixes.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_alerts.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_badges.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_breadcrumbs.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_button-groups.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_buttons.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_carousel.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_close.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_code.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_component-animations.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_dropdowns.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_forms.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_glyphicons.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_grid.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_input-groups.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_jumbotron.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_labels.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_list-group.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_media.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_mixins.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_modals.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_navbar.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_navs.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_normalize.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_pager.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_pagination.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_panels.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_popovers.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_print.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_progress-bars.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_responsive-embed.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_responsive-utilities.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_scaffolding.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_tables.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_theme.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_thumbnails.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_tooltip.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_type.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_utilities.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_variables.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\bootstrap\_wells.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\_bootstrap-compass.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\_bootstrap-mincer.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Bootstrap\_bootstrap-sprockets.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\style.css.map" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\style.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_CEOCornerWebpartMock.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_master.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_NewsAndEventsWebpartMock.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_phoneBookWebpartMock.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_RQHRPortalHomeLayout.scss" />
+    <None Include="Template\Layouts\RQHRPortal\Stylesheets\Custom\sass\_videosAndOtherContentWebpartMock.scss" />
+    <None Include="Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c68f9d63-986f-4821-9af9-378f3ba4efec}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

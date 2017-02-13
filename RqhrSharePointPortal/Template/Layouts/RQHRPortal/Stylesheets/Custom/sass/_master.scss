@@ -1,0 +1,318 @@
+﻿#ms-help {
+    padding-top: 4px;
+    margin-left: 10px;
+} 
+
+.ms-siteactions-normal {
+    width: 30px;
+    margin-top: -2px;
+}
+
+.ms-welcome-hover, .ms-siteactions-hover{
+    border:none !important;
+}
+
+#headerDiv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.ms-cui-topBar2.ms-cui-topBarMaximized {
+    background-color: #1F2120;
+}
+
+#globalNavBox {
+    background-color: #1F2120;
+}
+
+.ms-cui-tt-a {
+    font-weight: bold;
+}
+
+.ms-cui-tt-a > .ms-cui-tt-span {
+    color: white !important;
+}
+.Footer {
+    padding-left: 300px;
+    padding-top: 48px;
+    height: 150px;
+    background-color: #1F2120;
+}
+.footer-img {
+    background-color: #1F2120;
+}
+#s4-bodyContainer {
+    padding-bottom: 0;
+}
+
+.ms-cui-topBar2.ms-cui-topBarMaximized {
+    border-bottom: none !important;
+}
+.ms-cui-topBar2 {
+    border-bottom: none !important;
+}
+.ms-cui-tabContainer {
+    margin-top: 1px;
+}
+#DeltaSPRibbon {
+    border-bottom: 0 !important;
+}
+
+.ms-cui-tabBody {
+    border-bottom: none !important;
+}
+#myNavbar {
+    border-radius: 0 !important;
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    margin-bottom: 0;
+}
+
+.page-footer{
+    background-color:#1F2120;
+    height:150px;
+    padding-top: 50px;
+}
+.activeNavItem
+{
+    height:3px;
+    background-color: green;
+}
+.navCurrentItem{
+    height:3px;
+}
+#searchInputBox {
+    background-color: white !important;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+#ctl00_SmallSearchInputBox1_csr_sboxdiv {
+    border-radius: 5px;
+}
+.ms-srch-sb-border {
+    border: none !important;
+}
+.navigationContainer{
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+width: 1280px;
+}
+
+@media (min-width: 1024px){
+            .ms-srch-sb > input {
+                 width:120px;
+            }            
+
+
+          }
+
+@media(max-width: 1024px){
+            .ms-srch-sb > input {
+                 width:22px;
+            }
+            .navLink {
+                width: 89px;
+                text-align: center;
+            }
+            .navContainer{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width:100% !important;
+            }
+            .mainDiv{
+                width:100% !important
+            }
+            
+            
+            #leftSecondaryContainer {
+               width: 10000px;
+            }
+            #leftMainContainer{
+                overflow-x: scroll;
+                overflow-y: hidden !important;    
+            }
+
+            }
+
+.navLink {
+    color: #1F2120 !important;
+}
+#leftMainContainer{
+                overflow-y: scroll;
+            }
+
+/* Hide Site Actions gear icon */
+.ms-siteactions-imgspan {
+    display: none;
+}
+ 
+/* Insert new Site Actions image */
+.ms-siteactions-normal > a:before {
+    content: "";  /* Required for pseudo element */
+    background: url("/_layouts/15/RQHRPortal/Images/actions.png");  /* Image URL */
+    height: 18px;  /* Height of image */
+    width: 20px;  /* Width of image */
+    display: block;  /* Forces respect of width and height */
+}
+ 
+/* Set Site Actions image hover */
+.ms-siteactions-normal > a:hover:before {
+    background: url("/_layouts/15/RQHRPortal/Images/hoverActionTest.png");  /* Hover image URL */
+}
+ 
+/* Remove OOTB Site Actions hover */
+.ms-siteactions-hover {
+    background: transparent;
+    border-right-color: transparent;
+}
+[id*=TopHelpLink] {
+    background: url(/_layouts/15/RQHRPortal/Images/helpIcon.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+[id*=TopHelpLink]:hover {
+    background: url(/_layouts/15/RQHRPortal/Images/helpIconHover.png);
+}
+[id*=CustomNotifications] {
+    background: url(/_layouts/15/RQHRPortal/Images/notificationsIcon.png);
+    background-repeat: no-repeat;
+    margin-top: 6px;
+}
+[id*=CustomNotifications]:hover {
+    background: url(/_layouts/15/RQHRPortal/Images/notificationsIconHover.png);
+}
+#suiteBarButtons{
+    margin-left: 40px;
+}
+#siteactiontd {
+    margin-left: 6px;
+}
+.nav-footer ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#footer-links{
+    float: right;
+    padding-top: 10px;
+}
+
+#footer-links a {
+    color: #00833F;
+}
+.ms-webpartPage-root{
+    border-spacing: 0 !important;
+}
+.ms-webpartzone-cell{
+    margin: 0 !important
+}
+
+
+.navbar-collapse.collapse {
+display: block!important;
+}
+
+.navbar-collapse{
+    border: none !important;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+
+.navbar-nav.navbar-right:last-child {
+margin-right: -15px !important;
+}
+
+.navbar-right {
+float: right!important;
+}
+
+
+
+.webpart-wrapper {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+%partialUnderline {
+    content: "";
+    display: block; 
+    background-color:#B0B4B3; 
+    height:5px;
+    
+}
+
+.h5PartialUnderline::after{
+    @extend %partialUnderline;
+    margin-top: 7px;
+    width:30px;
+ }
+
+.h1PartialUnderline::after{
+    @extend %partialUnderline;
+    width: 90px;
+    margin-top: 5px;
+ }
+
+.h3PartialUnderline:after{
+    @extend %partialUnderline;
+    background-color:#14945D !important;
+    margin-top: 5px !important;
+    width:30px;
+}
+
+.nopadding {
+   padding: 0 !important;
+}
+
+#testDropDown {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    position: fixed;
+    width: 900px;
+    z-index: 1;
+    color: white;
+
+    display: none;
+    background-color: #00833F;
+    padding: 10px;
+}
+
+.departmentDropdownItems{
+    margin-left: 5px;
+    line-height: 70%;
+}
+
+.departmentCharacter{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.firstCharacter{
+    margin-top: 0;
+}
+
+#testDropDown a:hover{
+    color: white;
+}
+.news-page-image{
+    width: 450px;
+    padding-right:10px;
+    padding-bottom:5px;
+}
+
+.news-page-title{
+    margin-bottom: 25px;
+}

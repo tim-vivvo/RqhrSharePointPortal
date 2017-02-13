@@ -1,0 +1,39 @@
+﻿@media (min-width: 1024px) {
+    #firstRow, #secondRow {
+        margin: 0 !important;
+    }
+    #secondRow {
+        padding-bottom: 45px;
+    }
+
+    #secondRowFirstColumn{
+        padding: 0 !important;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    #secondRowFirstColumn {
+        width: 60% !important;
+        float: left !important;
+      
+    }
+
+    #secondRowSecondColumn {
+        width: 40% !important;
+        float: left !important;
+    }
+}
+
+#secondRowFirstColumn{
+    padding: 0 !important;
+
+
+}
+
+#secondRowSecondColumn {
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+

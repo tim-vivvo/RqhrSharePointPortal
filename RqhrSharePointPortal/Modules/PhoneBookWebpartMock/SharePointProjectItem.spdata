@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="PhoneBookWebpartMock.webpart" Target="PhoneBookWebpartMock\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="PhoneBookWebpartMock\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

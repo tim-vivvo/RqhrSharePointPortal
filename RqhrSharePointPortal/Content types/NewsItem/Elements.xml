@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100F98B90F6C7F24345B4751ABCDF76E35A" Name="NewsItem" Group="RQHR Content Types" Description="News Item Content Type" Inherits="TRUE" Version="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <FieldRefs>
+      <FieldRef ID="{5810CF4E-4158-4F97-9BEA-ED951D4E87C0}" DisplayName="Body" Required="TRUE" Description="News Item Body" Name="NewsItemBody" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{AE444E56-FA26-46B2-9CC7-19E9BB277CA4}" DisplayName="Expiry Date" Required="TRUE" Description="Expiry Date" Name="ExpiryDate" Format="DateOnly" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{C6D21677-F4F9-4E3E-B62F-3CDEE9D4094E}" DisplayName="News Item Image" Required="FALSE" Name="NewsItemImage" Format="Image" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{635a2031-2088-4413-b54e-d2af5daf08bf}" DisplayName="News Item Link" Required="FALSE" Name="NewsItemLink" Format="Hyperlink" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{AF273E5C-36D1-425B-82A8-D7C1F13ED1E8}" DisplayName="NewsItemCategory" Required="TRUE" Description="News Item Category" Name="NewsItemCategory" ShowInEditForm="TRUE" ShowInNewForm="TRUE" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{19B1C0A1-3D37-4D2B-A7BE-AEC1E11B7C9E}" DisplayName="Approval Status" Required="FALSE" Description="Item Approval Status" Name="ApprovalStatus" ShowInEditForm="FALSE" ShowInNewForm="FALSE" ShowInDisplayForm="TRUE" />
+      <FieldRef ID="{68AA1AAC-92CE-4B47-9B4F-B7BDAF590787}" DisplayName="News Item Image Url" Required="FALSE" Description="News Item Image Url" Name="NewsItemImageUrl" ShowInEditForm="FALSE" ShowInNewForm="FALSE" ShowInDisplayForm="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="NewsAndEventsWebpartMock" List="113" Url="_catalogs/wp" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <File Path="NewsAndEventsWebpartMock\NewsAndEventsWebpartMock.webpart" Url="RQHRPortal_NewsAndEventsWebpartMock.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="975f16b5-6fdf-4dca-9906-5381806d29e9" solutionId="30d75bf9-6fef-41ba-b192-5c328726ff94" resetWebServer="false" sharePointProductVersion="15.0" name="RqhrSharePointPortal" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9f1dc0af-8eb3-4dd3-ba62-3352295f0c0c" />
+    <featureReference itemId="6d97c37e-b8be-48dd-a428-8ec3873be357" />
+    <featureReference itemId="5a3500ac-ab52-4b98-a6c0-af09218eab32" />
+    <featureReference itemId="db951d9a-a826-4722-b976-00cccd46ce3e" />
+    <featureReference itemId="2bc39b7f-b883-49dd-b9ee-95ecddcba83b" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c68f9d63-986f-4821-9af9-378f3ba4efec" />
+  </projectItems>
+</package>
